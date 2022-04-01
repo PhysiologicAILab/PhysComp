@@ -16,3 +16,7 @@ class serialPort():
 
         self.ser.open()
         return self.ser.is_open
+
+    def disconnectPort(self):
+        self.ser.close()
+        return
