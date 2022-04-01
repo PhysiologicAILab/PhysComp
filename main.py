@@ -10,7 +10,6 @@ import os
 from PySide6.QtWidgets import QApplication, QWidget, QGraphicsScene, QDialog, QLineEdit, QDialogButtonBox, QFormLayout
 from PySide6.QtCore import QFile, QObject, Signal
 from PySide6.QtUiTools import QUiLoader
-from natsort import as_ascii
 
 import numpy as np
 import matplotlib.pyplot as plt
