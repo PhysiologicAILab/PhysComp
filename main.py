@@ -650,6 +650,8 @@ def ppgDataSendLoop(addData_callbackFunc, spObj):
 
             time.sleep(0.01)
             mySrc.data_signal.emit(ppgVal)  # <- Here you emit a signal!l
+        else:
+            time.sleep(1)
 
 def main(app):
     # app.setStyle('Fusion')
