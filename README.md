@@ -10,7 +10,20 @@ cd to the directory where requirements.txt is located.
 
 activate your virtual environment
 
-run: pip install -r requirements.txt in your shell.
+In your shell/ terminal, execute following: 
+
+``` bash
+pip install -r requirements.txt
+```
+
+Note: If you face the following error:
+TypeError: 'PySide6.QtWidgets.QGraphicsScene.addWidget' called with wrong argument types: PySide6.QtWidgets.QGraphicsScene.addWidget(LivePlotFigCanvas) Supported signatures: PySide6.QtWidgets.QGraphicsScene.addWidget(PySide6.QtWidgets.QWidget, PySide6.QtCore.Qt.WindowFlags = Default(Qt.WindowFlags))
+
+Uninstall and install matplotlib package as below:
+``` bash    
+    pip uninstall matplotlib
+    pip install matplotlib
+```
 
 ## **Terminal command to execute the program**
 ``` bash

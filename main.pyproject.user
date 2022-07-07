@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.84.0, 2022-06-30T18:54:36. -->
+<!-- Written by QtCreator 7.0.2, 2022-07-08T00:43:57. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{97df2979-5789-4176-b240-854a22d05a84}</value>
+  <value type="QByteArray">{d40bfbaf-2555-46ce-8daa-2dc4f4b6074b}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -70,11 +70,9 @@
    <valuemap type="QVariantMap" key="AutoTest.CheckStates"/>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
-   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey">
-    <value type="QString">-fno-delayed-template-parsing</value>
-   </valuelist>
+   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
    <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
-   <value type="QString" key="ClangCodeModel.WarningConfigId">Builtin.Questionable</value>
+   <value type="QString" key="ClangCodeModel.WarningConfigId">Builtin.BuildSystem</value>
    <valuemap type="QVariantMap" key="ClangTools">
     <value type="bool" key="ClangTools.AnalyzeOpenFiles">true</value>
     <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
@@ -91,9 +89,9 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Replacement for &quot;Desktop Qt 5.15.2 MinGW 64-bit&quot;</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Replacement for &quot;Desktop Qt 5.15.2 MinGW 64-bit&quot;</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5152.win64_mingw81_kit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{4eec2a58-e77c-444f-802f-4de9048c7992}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">-1</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
@@ -115,36 +113,19 @@
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="Analyzer.Valgrind.VisibleErrorKinds">
-     <value type="QString">0</value>
-     <value type="QString">1</value>
-     <value type="QString">2</value>
-     <value type="QString">3</value>
-     <value type="QString">4</value>
-     <value type="QString">5</value>
-     <value type="QString">6</value>
-     <value type="QString">7</value>
-     <value type="QString">8</value>
-     <value type="QString">9</value>
-     <value type="QString">10</value>
-     <value type="QString">11</value>
-     <value type="QString">12</value>
-     <value type="QString">13</value>
-     <value type="QString">14</value>
-    </valuelist>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/repos/jj/ucl/PhysComp/main.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/repos/jj/ucl/PhysComp/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/repos/jj/ucl/PhysComp/main.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{818be37b-48d1-4b73-82b4-637a36e6ced9}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\repos\jj\ucl\PhysComp\main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/mnt/0EA7158B0EA7158B/repos/jj/ucl/PhysComp/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./mnt/0EA7158B0EA7158B/repos/jj/ucl/PhysComp/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/mnt/0EA7158B0EA7158B/repos/jj/ucl/PhysComp/main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{581367d5-0970-49d9-90a5-169a3562e573}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/mnt/0EA7158B0EA7158B/repos/jj/ucl/PhysComp/main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/repos/jj/ucl/PhysComp</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/mnt/0EA7158B0EA7158B/repos/jj/ucl/PhysComp</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

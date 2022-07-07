@@ -1,23 +1,28 @@
 # This Python file uses the following encoding: utf-8
 import threading
 import time
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.lines import Line2D
-from matplotlib.animation import TimedAnimation
-from matplotlib.figure import Figure
 import os
+# os.environ['PYSIDE_DESIGNER_PLUGINS'] = '.'
+import numpy as np
+from datetime import datetime
+import calendar
+import heartpy as hp
 
 from PySide6.QtWidgets import QApplication, QWidget, QGraphicsScene, QDialog, QLineEdit, QDialogButtonBox, QFormLayout
 from PySide6.QtCore import QFile, QObject, Signal
 from PySide6.QtUiTools import QUiLoader
 
-import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib
+# matplotlib.use('TkAgg')
+# from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.lines import Line2D
+from matplotlib.animation import TimedAnimation
+from matplotlib.figure import Figure
+from matplotlib.pyplot import get_cmap
+
 from utils.data_processing_lib import lFilter
 from utils.devices import serialPort
-import heartpy as hp
-from datetime import datetime
-import calendar
 
 live_acquisition_flag = False
 update_bar_plot_axis = False
@@ -394,7 +399,7 @@ class FeaturesFigCanvas(FigureCanvas, TimedAnimation):
 
         # The window
         self.fig = Figure(figsize=(10, 5), dpi=50)
-        self.category_colors = plt.get_cmap('nipy_spectral')(np.linspace(0.15, 0.85, len(conditions)))
+        self.category_colors = get_cmap('nipy_spectral')(np.linspace(0.15, 0.85, len(conditions)))
 
         self.ax1 = self.fig.add_subplot(231)
         self.bpm_bar = self.ax1.barh(self.y_pos, self.bpm, color=self.category_colors)
