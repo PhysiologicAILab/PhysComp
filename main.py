@@ -73,10 +73,14 @@ class PPG(QWidget):
             self.ui.ser_port_names.append(port)
 
         self.ui.comboBox_comport.addItems(self.ui.ser_port_names)
-        self.ui.curr_ser_port_name = self.ui.ser_port_names[0]
-        self.ui.pushButton_connect.setEnabled(True)
-        self.ui.label_status.setText("Serial port specified: " + self.ui.curr_ser_port_name +
-                                     "; Select experiment and condition to start recording data.")
+        if len(self.ui.ser_port_names) != 0:
+            self.ui.curr_ser_port_name = self.ui.ser_port_names[0]
+            self.ui.pushButton_connect.setEnabled(True)
+            self.ui.label_status.setText("Serial port specified: " + self.ui.curr_ser_port_name +
+                                        "; Select experiment and condition to start recording data.")
+        else:
+            self.ui.label_status.setText("No Arduino board detected. Please check if it is connected")
+            self.ui.pushButton_connect.setEnabled(False)
 
         self.ui.comboBox_comport.currentIndexChanged.connect(self.update_serial_port)
         self.ui.pushButton_connect.pressed.connect(self.connect_serial_port)
