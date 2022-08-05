@@ -648,17 +648,19 @@ def ppgDataSendLoop(addData_callbackFunc, spObj):
     while(True):
         if live_acquisition_flag:
             #Read data from serial port
-            serial_data = spObj.ser.readline()
-            serial_data = serial_data.split(b'\r\n')
-            # print(serial_data)
-
             try:
+                serial_data = spObj.ser.readline()
+                serial_data = serial_data.split(b'\r\n')
+                # print(serial_data)
                 ppgVal = float(serial_data[0])
-            except:
-                ppgVal = ppgVal
+                # time.sleep(0.039)
+                mySrc.data_signal.emit(ppgVal)  # <- Here you emit a signal!l
 
-            time.sleep(0.01)
-            mySrc.data_signal.emit(ppgVal)  # <- Here you emit a signal!l
+            except:
+                mySrc.data_signal.emit(0)
+                print('Error reading the serial port. Check if the correct port is specified and \
+                    parsing of the data packet is done correctly ...')
+                time.sleep(1)
         else:
             time.sleep(1)
 
