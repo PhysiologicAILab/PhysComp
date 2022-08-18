@@ -265,9 +265,8 @@ class LivePlotFigCanvas(FigureCanvas, TimedAnimation):
         self.max_time = 20
         self.measure_time = 5
         self.xlim = self.max_time*self.uiObj.fs
-        self.n = np.linspace(0, self.xlim - 1, self.xlim)
-        self.y = (self.n * 0.0) + 50
-        self.n = self.n/self.uiObj.fs
+        self.n = np.linspace(0, self.max_time, self.xlim)
+        self.y = np.zeros_like(self.n)
         # The window
         self.fig = Figure(figsize=(25,5), dpi=50)
         self.ax1 = self.fig.add_subplot(111)
@@ -316,7 +315,7 @@ class LivePlotFigCanvas(FigureCanvas, TimedAnimation):
         # self.addedData.append(value)
         self.addedData.append(filtered_value)
         if self.uiObj.data_record_flag:
-            raw_ppg_signal.append(filtered_value)
+            raw_ppg_signal.append(value)
         return
 
     def _step(self, *args):

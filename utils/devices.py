@@ -11,7 +11,7 @@ import serial.tools.list_ports as lp
 class serialPort():
     def __init__(self) -> None:
         self.ser = serial.Serial()
-        self.baudrate = 9600 #57600 for AFE_4490 #9600 for PulseSensor
+        self.baudrate = 115200 #57600 for AFE_4490 #9600 for PulseSensor
         self.timeout = 10  # specify timeout when using readline()
         self.ports = lp.comports()
 

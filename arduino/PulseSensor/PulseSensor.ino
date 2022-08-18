@@ -32,7 +32,7 @@ int Signal;                // holds the incoming raw data. Signal value can rang
 // The SetUp Function:
 void setup() {
   pinMode(LED13,OUTPUT);         // pin that will blink to your heartbeat!
-   Serial.begin(9600);         // Set's up Serial Communication at certain speed.
+   Serial.begin(115200);         // Set's up Serial Communication at certain speed.
 
 }
 
@@ -52,7 +52,7 @@ void loop() {
 //   }
 
 
-delay(25);
+delay(10); //sampling rate of 100 samples per second
 
 
 }
